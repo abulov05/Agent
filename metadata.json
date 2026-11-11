@@ -1,0 +1,6 @@
+{
+  "name": "Agent Analytics OSINT Suite",
+  "description": "Профессиональная аналитическая платформа для OSINT-расследований, анализа профилей Telegram, проверки телефонных номеров, биометрического поиска лиц и ИИ-помощника.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

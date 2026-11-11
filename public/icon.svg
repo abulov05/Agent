@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="cyberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#050814" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#050814"/>
+  <rect width="512" height="512" rx="112" fill="url(#cyberGlow)"/>
+
+  <!-- Outer Cyber Border -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#00f3ff" stroke-width="3" stroke-opacity="0.4" stroke-dasharray="16 10"/>
+
+  <!-- Radar Rings -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.15"/>
+  <circle cx="256" cy="256" r="130" fill="none" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.25"/>
+  <circle cx="256" cy="256" r="80" fill="none" stroke="#00f3ff" stroke-width="2" stroke-opacity="0.35"/>
+
+  <!-- Crosshairs -->
+  <line x1="256" y1="56" x2="256" y2="456" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.2"/>
+  <line x1="56" y1="256" x2="456" y2="256" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.2"/>
+
+  <!-- Shield Shield / Emblem -->
+  <path d="M 256 120 L 370 170 V 270 C 370 345 320 405 256 424 C 192 405 142 345 142 270 V 170 Z" 
+        fill="#0b1120" stroke="url(#shieldGrad)" stroke-width="10" stroke-linejoin="round"/>
+
+  <!-- Eye / Scanner Aperture inside Shield -->
+  <path d="M 186 260 C 210 216 302 216 326 260 C 302 304 210 304 186 260 Z" 
+        fill="#07182e" stroke="#00f3ff" stroke-width="5"/>
+
+  <circle cx="256" cy="260" r="28" fill="url(#coreGrad)" stroke="#38bdf8" stroke-width="4"/>
+  <circle cx="256" cy="260" r="10" fill="#00f3ff"/>
+
+  <!-- Glowing Corner Brackets -->
+  <path d="M 60 110 V 60 H 110" stroke="#00f3ff" stroke-width="4" fill="none"/>
+  <path d="M 452 110 V 60 H 402" stroke="#00f3ff" stroke-width="4" fill="none"/>
+  <path d="M 60 402 V 452 H 110" stroke="#00f3ff" stroke-width="4" fill="none"/>
+  <path d="M 452 402 V 452 H 402" stroke="#00f3ff" stroke-width="4" fill="none"/>
+</svg>
